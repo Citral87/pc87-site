@@ -758,9 +758,79 @@
 .pricing-title{ font-weight:700; color:#1f2937; margin-bottom:.15rem; }
 .pricing-price{ font-weight:800; color:#3659e3; }
 
-/* Bouton vert (reprend un vert moderne) */
-.btn-accent{
-  background:#26d48c; border-color:#26d48c color:#fff;
-  box-shadow:0 6px 16px rgba(34,197,94,.2);
-}
+
+
 .btn-accent:hover{ background:#16a34a; border-color:#16a34a; color:#fff; }
+
+/* Forcer le texte "small" en blanc au survol des cartes services */
+.services-item .services-content-icon small,
+.services-item .services-content-icon .text-muted{
+  transition: color .3s ease;
+}
+
+.services-item:hover .services-content-icon small,
+.services-item:hover .services-content-icon .text-muted{
+  color: #fff !important;
+  opacity: .95;
+}
+
+/* Forcer les listes <ul class="small"> en blanc au survol */
+.services-item:hover .services-content-icon ul.small li,
+.services-item:hover .services-content-icon ul.small li strong,
+.services-item:hover .services-content-icon ul.small li em {
+  color: #fff !important;
+}
+
+/* Correction email long qui dépasse */
+.contact-info a,
+.contact-info span,
+.contact-info {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  word-break: break-all;
+}
+
+/* Carousel mobile fix */
+@media (max-width: 576px) {
+  .carousel-caption {
+    bottom: 1.5rem;
+    padding: 0 1rem;
+  }
+
+  .carousel-caption h1 {
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+
+  .carousel-caption p {
+    font-size: 0.9rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .carousel-caption .btn {
+    display: block;
+    width: 100%;
+    margin: 0.3rem 0;
+    font-size: 0.9rem;
+    padding: 0.5rem;
+  }
+
+  .carousel-indicators {
+    bottom: -5px; /* plus proche mais pas collé */
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 12%;
+  }
+}
+/* Ajustement des points du carrousel */
+.carousel-indicators {
+  bottom: -25px; /* descend les points sous les boutons */
+}
+
+@media (max-width: 576px) {
+  .carousel-indicators {
+    bottom: -30px; /* encore plus bas en mobile */
+  }
+}
