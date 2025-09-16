@@ -834,3 +834,13 @@
     bottom: -30px; /* encore plus bas en mobile */
   }
 }
+
+/* Corrige l'overflow des mails longs */
+.break-mail {
+  display: inline-block;
+  max-width: 100%;
+  white-space: normal;        /* autorise le retour à la ligne */
+  overflow-wrap: anywhere;    /* casse le mot si nécessaire */
+  word-break: break-word;     /* fallback */
+  line-height: 1.3;
+}
