@@ -46,11 +46,11 @@
     <div class="container">
       <div class="d-flex justify-content-between topbar">
         <div class="top-info">
-          <small class="me-3 text-white-50">
+          <small class="me-3 fw-bold text-white">
             <i class="fas fa-map-marker-alt me-2 text-secondary"></i>Limoges & alentours (20 km)
           </small>
-          <small class="me-3 text-white-50">
-            <a href="mailto:thierry.salzedas@mail.com" class="text-white-50">
+          <small class="me-3 fw-bold text-white">
+            <a href="mailto:thierry.salzedas@mail.com" class="fw-bold text-white text-decoration-none">
               <i class="fas fa-envelope me-2 text-secondary"></i>thierry.salzedas@mail.com
             </a>
           </small>
@@ -96,12 +96,9 @@
               </div>
             </a>
           </div>
-          <div class="d-flex flex-column pe-4 border-end">
+          <div class="d-flex flex-column pe-4 ">
             <span class="text-white-50">Une question ?</span>
-            <a href="tel:+33777939131" class="text-secondary text-decoration-none">07 77 93 91 31</a>
-          </div>
-          <div class="d-flex align-items-center justify-content-center ms-4">
-            <a href="#"><i class="bi bi-search text-white fa-2x"></i></a>
+            <a href="tel:+33777939131" class="phone-link text-secondary text-decoration-none">07 77 93 91 31</a>
           </div>
         </div>
       </nav>
@@ -123,8 +120,8 @@
             <div class="container carousel-content">
               <h6 class="text-secondary h4 animated fadeInUp">Dépannage informatique à domicile</h6>
               <h1 class="text-white display-1 mb-4 animated fadeInRight">PC lent, Wi-Fi, imprimante, virus ?</h1>
-              <p class="mb-4 text-white fs-5 animated fadeInDown">Intervention à Limoges & alentours. Tarifs clairs : 30
-                € / 30 min • 50 € / h. Mise à niveau Windows & optimisation.</p>
+              <p class="mb-4 text-white fs-5 animated fadeInDown">Intervention à Limoges & alentours.Mise à niveau
+                Windows & optimisation.</p>
               <a href="service.html" class="me-2">
                 <button type="button"
                   class="px-4 py-sm-3 px-sm-5 btn btn-primary rounded-pill carousel-content-btn1 animated fadeInLeft">Voir
@@ -143,9 +140,12 @@
           <div class="carousel-caption">
             <div class="container carousel-content">
               <h6 class="text-secondary h4 animated fadeInUp">Accompagnement & cours personnalisés</h6>
-              <h1 class="text-white display-1 mb-4 animated fadeInLeft">Windows, e-mail, photos, démarches en ligne</h1>
-              <p class="mb-4 text-white fs-5 animated fadeInDown">Cours 30 € / h — Forfaits 5h = 130 € • 10h = 240 €.
-                Adaptés aux débutants et aux seniors.</p>
+              <h1 class="text-white display-1 mb-4 animated fadeInLeft">Windows, e-mail, transfert photos, démarches en
+                ligne...</h1>
+              <p class="mb-4 text-white fs-5 animated fadeInDown">
+                Cours personnalisés à domicile, adaptés aux débutants et aux seniors. Programme simple, progressif et
+                pratique.
+              </p>
               <a href="service.html" class="me-2">
                 <button type="button"
                   class="px-4 py-sm-3 px-sm-5 btn btn-primary rounded-pill carousel-content-btn1 animated fadeInLeft">En
@@ -172,37 +172,44 @@
   </div>
   <!-- Carousel End -->
 
-  <!-- “Facts” remplacés par infos utiles -->
-  <div class="container-fluid bg-secondary py-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-3 wow fadeIn" data-wow-delay=".1s">
-          <div class="d-flex counter">
-            <h1 class="me-3 text-primary counter-value">20</h1>
-            <h5 class="text-white mt-1">Km de zone d’intervention</h5>
-          </div>
+<!-- Infos clés -->
+<div class="container-fluid bg-secondary py-5">
+  <div class="container">
+    <div class="row">
+      <!-- Zone d’intervention -->
+      <div class="col-lg-3 wow fadeIn" data-wow-delay=".1s">
+        <div class="d-flex counter">
+          <h1 class="me-3 text-primary counter-value">20</h1>
+          <h5 class="text-white mt-1">km autour de Limoges</h5>
         </div>
-        <div class="col-lg-3 wow fadeIn" data-wow-delay=".3s">
-          <div class="d-flex counter">
-            <h1 class="me-3 text-primary counter-value">6</h1>
-            <h5 class="text-white mt-1">Jours / semaine (lun–sam)</h5>
-          </div>
+      </div>
+
+      <!-- Prise en charge -->
+      <div class="col-lg-3 wow fadeIn" data-wow-delay=".3s">
+        <div class="d-flex counter">
+          <h1 class="me-3 text-primary counter-value">48</h1>
+          <h5 class="text-white mt-1">Heure prise en charge rapide</h5>
         </div>
-        <div class="col-lg-3 wow fadeIn" data-wow-delay=".5s">
-          <div class="d-flex counter">
-            <h1 class="me-3 text-primary counter-value">30</h1>
-            <h5 class="text-white mt-1">€ / 30 min — dépannage rapide</h5>
-          </div>
+      </div>
+
+      <!-- Cours personnalisés -->
+      <div class="col-lg-3 wow fadeIn" data-wow-delay=".5s">
+        <div class="d-flex counter">
+          <h1 class="me-3 text-primary counter-value">100</h1>
+          <h5 class="text-white mt-1">% Cours adaptés seniors & débutants</h5>
         </div>
-        <div class="col-lg-3 wow fadeIn" data-wow-delay=".7s">
-          <div class="d-flex counter">
-            <h1 class="me-3 text-primary counter-value">50</h1>
-            <h5 class="text-white mt-1">€ / h — main d’œuvre</h5>
-          </div>
+      </div>
+
+      <!-- Interlocuteur unique -->
+      <div class="col-lg-3 wow fadeIn" data-wow-delay=".7s">
+        <div class="d-flex counter">
+          <h1 class="me-3 text-primary counter-value">1</h1>
+          <h5 class="text-white mt-1">Interlocuteur unique de A à Z</h5>
         </div>
       </div>
     </div>
   </div>
+</div>
 
   <!-- About Start -->
   <div class="container-fluid py-5 my-5">
@@ -210,20 +217,25 @@
       <div class="row g-5">
         <div class="col-lg-5 col-md-6 col-sm-12 wow fadeIn" data-wow-delay=".3s">
           <div class="h-100 position-relative">
-            <img src="img/about-1.jpg" class="img-fluid w-75 rounded" alt="PC87 dépannage informatique Limoges"
+            <img src="img/about3.png" class="img-fluid w-75 rounded" alt="PC87 dépannage informatique Limoges"
               style="margin-bottom: 25%;">
             <div class="position-absolute w-75" style="top: 25%; left: 25%;">
-              <img src="img/about-2.jpg" class="img-fluid w-100 rounded" alt="Mise à niveau Windows & optimisation PC">
+              <img src="img/admin.jpg" class="img-fluid w-100 rounded" alt="Mise à niveau Windows & optimisation PC">
             </div>
           </div>
         </div>
         <div class="col-lg-7 col-md-6 col-sm-12 wow fadeIn" data-wow-delay=".5s">
           <h5 class="text-primary">À propos</h5>
           <h1 class="mb-4">PC87 — Dépannage & cours informatiques à Limoges</h1>
-          <p>Interventions à domicile : Windows, Wi-Fi, imprimantes, virus, comptes, transferts. Mise à niveau et
-            optimisation de vos ordinateurs (réinstallation propre, nettoyage, SSD/RAM si besoin).</p>
-          <p class="mb-4">Cours personnalisés pour bien utiliser PC, Mac, smartphone : e-mail, photos, démarches en
-            ligne, sécurité anti-arnaques. Tarifs clairs, prise de rendez-vous simple.</p>
+          <p>
+            Passionné d’informatique et pédagogue, j’accompagne les particuliers de Limoges sur les sujets du quotidien
+            : Windows, Wi-Fi, imprimantes, sécurité, comptes et transferts de données. J’interviens à domicile avec des
+            explications simples et des solutions durables.
+          </p>
+          <p class="mb-4">
+            Avant chaque intervention, j’explique clairement les options et j’établis un devis rapide. Objectif :
+            remettre votre ordinateur en forme et vous rendre autonome, sans jargon ni mauvaise surprise.
+          </p>
           <a href="service.html" class="btn btn-secondary rounded-pill px-5 py-3 text-white">Découvrir les services</a>
         </div>
       </div>

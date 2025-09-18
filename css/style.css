@@ -89,7 +89,7 @@
 #note small {
     position: relative;
     display: inline-block;
-    animation: mymove 5s infinite;
+    animation: mymove 25s infinite;
     animation-timing-function: all;
 }
 
@@ -843,4 +843,27 @@
   overflow-wrap: anywhere;    /* casse le mot si nécessaire */
   word-break: break-word;     /* fallback */
   line-height: 1.3;
+}
+
+/* Augmenter uniquement le sous-titre du carrousel */
+.carousel-caption h6 {
+  font-size: 1.9rem; /* 24px environ, au lieu de la taille "h6" classique */
+  font-weight: 600; /* un peu plus marqué */
+}
+
+@media (max-width: 768px) {
+  .carousel-caption h6 {
+    font-size: 1.5rem; /* réduit légèrement sur mobile */
+  }
+}
+/* Mettre en valeur le numéro de téléphone dans l'entête */
+.phone-link {
+  font-weight: 700;       /* plus gras */
+  font-size: 1.2rem;      /* un peu plus grand */
+  color: #28a745 !important; /* jaune clair (tu peux changer en vert #28a745 si tu veux coller au style) */
+}
+
+.phone-link:hover {
+  text-decoration: underline;
+  color: #fff !important; /* au survol : blanc, bien visible */
 }
