@@ -848,3 +848,21 @@
 /* évite tout bridage et scroll horizontal */
 .container-fluid.px-0{padding-left:0;padding-right:0;max-width:100% !important;}
 html,body{overflow-x:hidden;}
+
+#carouselId,
+#carouselId .carousel-inner,
+#carouselId .carousel-item {
+  width: 100vw;
+  height: 90vh;
+}
+
+@media (min-width: 1600px) {
+  #carouselId,
+  #carouselId .carousel-inner,
+  #carouselId .carousel-item {
+    height: 75vh;  /* réduit la hauteur sur très grands écrans */
+  }
+}
+#carouselId .carousel-item > img {
+  object-position: center top; /* ou "center 30%" pour ajuster finement */
+}
