@@ -957,16 +957,14 @@ body {
 #carouselId .carousel-inner,
 #carouselId .carousel-item {
     width: 100vw;
-    height: 90vh;
+    height: 82vh;
 }
 
-@media (min-width: 1600px) {
-
+@media (max-width: 991.98px) {
     #carouselId,
     #carouselId .carousel-inner,
     #carouselId .carousel-item {
-        height: 75vh;
-        /* réduit la hauteur sur très grands écrans */
+        height: 72vh;
     }
 }
 
@@ -1350,75 +1348,50 @@ body {
     white-space: normal;
     /* sécurité */
 }
-.hero-title {
-  font-size: 4rem;
-  line-height: 1.1;
-  font-weight: 700;
-}
-
-.hero-subtitle {
-  font-size: 1.8rem;
-  font-weight: 600;
-}
-
-.hero-text {
-  font-size: 1.1rem;
-  max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.hero-topline {
-  font-size: 1.2rem;
-  font-weight: 600;
-}
-
+/* Ajustement mobile léger du carousel homepage */
 @media (max-width: 768px) {
+  #carouselId,
+  #carouselId .carousel-inner,
+  #carouselId .carousel-item {
+    height: 72vh;
+  }
+
+  #carouselId .carousel-item > img {
+    object-fit: cover;
+    object-position: center;
+  }
+
   .carousel-caption {
-    top: 50%;
-    transform: translateY(-50%);
-    bottom: auto;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 
-  .hero-title {
-    font-size: 2.2rem;
-    line-height: 1.15;
+  .carousel-item h1,
+  .carousel-item h2 {
+    font-size: 2rem !important;
+    line-height: 1.15 !important;
     margin-bottom: 0.75rem !important;
   }
 
-  .hero-subtitle {
-    font-size: 1.15rem;
-    line-height: 1.4;
-    margin-bottom: 0.75rem !important;
-  }
-
-  .hero-text {
-    font-size: 0.95rem;
-    line-height: 1.5;
-    margin-bottom: 1rem !important;
-  }
-
-  .hero-topline {
-    font-size: 0.95rem;
-    line-height: 1.3;
+  .carousel-item h6 {
+    font-size: 0.95rem !important;
     margin-bottom: 0.5rem !important;
   }
 
-  .carousel-content-btn1,
-  .carousel-content-btn2 {
-    padding: 10px 18px !important;
+  .carousel-item p {
     font-size: 0.95rem !important;
+    line-height: 1.45 !important;
+    margin-bottom: 0.9rem !important;
   }
 
-  #carouselId .carousel-item img {
-    min-height: 620px;
-    object-fit: cover;
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 56px;
+    height: 48px;
   }
-}
-@media (max-width: 768px) {
-  .hero-topline {
-    display: none;
+
+  .carousel-caption .btn {
+    font-size: 0.9rem;
+    padding: 10px 16px !important;
   }
 }
