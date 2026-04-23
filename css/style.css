@@ -1497,3 +1497,100 @@ body {
         font-size: 14px;
     }
 }
+/* ===== Bloc assistance à distance dans la navbar ===== */
+.navbar-right-tools {
+    gap: 0;
+}
+
+.remote-nav-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 16px;
+    padding: 10px 14px;
+    min-height: 58px;
+    transition: all 0.3s ease;
+}
+
+.remote-nav-link:hover {
+    background: rgba(255, 255, 255, 0.14);
+    transform: translateY(-1px);
+}
+
+.remote-badge {
+    background: #22c55e;
+    color: #fff;
+    font-size: 0.72rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    padding: 5px 9px;
+    border-radius: 999px;
+    line-height: 1;
+    box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.55);
+    animation: remotePulse 1.8s infinite;
+    flex-shrink: 0;
+}
+
+.remote-nav-text {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 0.92rem;
+    line-height: 1.15;
+}
+
+.remote-nav-text small {
+    display: block;
+    color: #7dd3fc;
+    font-size: 0.80rem;
+    font-weight: 600;
+    margin-top: 2px;
+    line-height: 1.1;
+}
+
+@keyframes remotePulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.55);
+    }
+    70% {
+        box-shadow: 0 0 0 8px rgba(34, 197, 94, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(34, 197, 94, 0);
+    }
+}
+/* ===== Bloc dépannage à distance (tarifs) ===== */
+.distance-box {
+    display: inline-block;
+}
+
+.distance-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: #f0f7ff;
+    border: 1px solid #dbeafe;
+    color: #0d6efd;
+    padding: 8px 14px;
+    border-radius: 999px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.25s ease;
+}
+
+.distance-link:hover {
+    background: #0d6efd;
+    color: #fff;
+    transform: translateY(-1px);
+}
+
+.distance-price {
+    background: #0d6efd;
+    color: #fff;
+    font-size: 0.75rem;
+    padding: 3px 8px;
+    border-radius: 999px;
+    font-weight: 700;
+}
