@@ -1594,3 +1594,81 @@ body {
     border-radius: 999px;
     font-weight: 700;
 }
+/* ===== Correction contact mobile : carte + formulaire pleine largeur ===== */
+@media (max-width: 767.98px) {
+
+    /* Le bloc général ne doit plus étouffer le contenu */
+    .contact-detail {
+        padding: 18px 12px !important;
+        border-radius: 0 !important;
+    }
+
+    .contact-detail::before {
+        border-radius: 0 !important;
+        height: 42%;
+    }
+
+    /* On réduit les gros espaces Bootstrap sur mobile */
+    .contact-detail .row.g-5 {
+        --bs-gutter-x: 0.8rem;
+        --bs-gutter-y: 1.4rem;
+    }
+
+    /* Carte et formulaire beaucoup plus larges */
+    .contact-map,
+    .contact-form {
+        width: 100%;
+        padding: 16px !important;
+        border-radius: 18px !important;
+        background: #26d48c;
+    }
+
+    /* Hauteur correcte pour la carte */
+    .contact-map {
+        min-height: 300px;
+    }
+
+    .contact-map iframe {
+        min-height: 270px;
+        width: 100% !important;
+        border-radius: 14px !important;
+    }
+
+    /* Le formulaire prend toute la largeur disponible */
+    .contact-form form {
+        width: 100%;
+    }
+
+    .contact-form .form-control {
+        width: 100%;
+        font-size: 1rem;
+        border-radius: 14px;
+        padding: 14px 16px !important;
+    }
+
+    .contact-form textarea {
+        min-height: 170px;
+    }
+
+    .contact-form button {
+        width: 100%;
+        border-radius: 999px;
+    }
+
+    /* Les cartes Zone / Téléphone / Email respirent mieux */
+    .contact-detail .d-flex.bg-light {
+        align-items: center;
+        padding: 14px !important;
+    }
+
+    .contact-detail .h5 {
+        font-size: 1rem;
+    }
+}
+@media (max-width: 767.98px) {
+    .contact-section .container {
+        max-width: 100% !important;
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+}
