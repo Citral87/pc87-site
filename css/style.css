@@ -1678,3 +1678,67 @@ body {
         padding-right: 10px !important;
     }
 }
+
+
+/* ===== Téléphone visible dans l'entête mobile ===== */
+.mobile-header-actions {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.mobile-phone-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    padding: 9px 12px;
+    border-radius: 999px;
+    background: #ffffff;
+    color: #2149bd;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 0.92rem;
+    line-height: 1;
+    white-space: nowrap;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, .12);
+}
+
+.mobile-phone-link i {
+    color: #22b573;
+}
+
+.mobile-phone-link:active,
+.mobile-phone-link:hover {
+    color: #2149bd;
+    background: #f8fafc;
+}
+
+@media (max-width: 420px) {
+    .navbar-brand img {
+        max-height: 74px !important;
+    }
+
+    .mobile-phone-link {
+        padding: 8px 10px;
+        font-size: 0.84rem;
+        gap: 6px;
+    }
+
+    .mobile-header-actions {
+        margin-right: 6px;
+    }
+}
+
+@media (max-width: 360px) {
+    .mobile-phone-link span {
+        display: none;
+    }
+
+    .mobile-phone-link {
+        width: 42px;
+        height: 42px;
+        justify-content: center;
+        padding: 0;
+        font-size: 1rem;
+    }
+}
