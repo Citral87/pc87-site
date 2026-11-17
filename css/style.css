@@ -1529,15 +1529,20 @@ body {
     display: grid;
     place-items: center;
     min-height: 64px;
+    max-width: 100%;
     margin-bottom: .5rem;
-    color: var(--bs-primary);
-    font-size: 2rem;
 }
 
 .affiliation-visual img {
     width: 156px;
     max-width: 100%;
     height: auto;
+}
+
+.affiliation-visual .affiliation-logo-malwarebytes {
+    width: 236px;
+    height: 64px;
+    object-fit: cover;
 }
 
 .affiliation-title {
