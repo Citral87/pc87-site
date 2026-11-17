@@ -93,6 +93,31 @@
     animation-timing-function: all;
 }
 
+@media (min-width: 992px) and (max-width: 1399.98px) {
+    .topbar {
+        align-items: center;
+        column-gap: .5rem;
+    }
+
+    .topbar .top-info,
+    .topbar .top-link {
+        flex-shrink: 0;
+    }
+
+    .topbar .top-info {
+        letter-spacing: normal;
+        white-space: nowrap;
+    }
+
+    #note {
+        min-width: 0;
+    }
+
+    #note small {
+        text-wrap: balance;
+    }
+}
+
 @keyframes mymove {
     from {
         left: -100%;
