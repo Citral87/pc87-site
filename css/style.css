@@ -380,6 +380,10 @@
     color: var(--bs-white);
 }
 
+.services-item:hover .service-portable-link {
+    color: var(--bs-white);
+}
+
 /*** Services End ***/
 
 
@@ -697,6 +701,24 @@
 .footer .hightech-link a:hover {
     background: var(--bs-secondary);
     border: 0;
+}
+
+.footer-affiliations {
+    margin-top: 1.5rem;
+    color: #cbd5e1;
+}
+
+.footer-affiliations a {
+    display: inline-block;
+    padding-block: .25rem;
+    color: inherit;
+    text-decoration: underline;
+    text-underline-offset: .2em;
+}
+
+.footer-affiliations a:hover,
+.footer-affiliations a:focus-visible {
+    color: var(--bs-white);
 }
 
 /*** Footer End ***/
@@ -1479,6 +1501,50 @@ body {
     color: #3659e3;
     font-weight: 700;
     font-size: .98rem;
+}
+
+/* Affiliations professionnelles sur l’accueil */
+.affiliation-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .375rem;
+    height: 100%;
+    padding: 1.5rem 1rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 1rem;
+    background: var(--bs-white);
+    box-shadow: 0 6px 20px rgba(15, 23, 42, .05);
+    color: #475569;
+    text-align: center;
+}
+
+.affiliation-card:hover,
+.affiliation-card:focus-visible {
+    border-color: var(--bs-primary);
+    color: #475569;
+}
+
+.affiliation-visual {
+    display: grid;
+    place-items: center;
+    min-height: 64px;
+    margin-bottom: .5rem;
+    color: var(--bs-primary);
+    font-size: 2rem;
+}
+
+.affiliation-visual img {
+    width: 156px;
+    max-width: 100%;
+    height: auto;
+}
+
+.affiliation-title {
+    color: var(--bs-primary);
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: .2em;
 }
 
 @media (max-width: 576px) {
